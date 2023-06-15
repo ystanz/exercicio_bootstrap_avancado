@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Título do site</title>
+</head>
+
+<body>
+    <div data-bs-spy="scroll" data-bs-target="#header">
+        <header id="header">
+            <div class="navbar navbar-expand-lg border-bottom">
+                <div class="container">
+                    <h1>Título do site</h1>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                        <ul class="nav nav-pills navbar-nav text-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#inicio">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#produtos">Produtos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#promocoes">Promoções</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobre">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contato">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="inicio" class="container section-carousel">
+            <div class="carousel carousel-fade slide" data-bs-ride="carousel" id="initial-carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="5000" class="carousel-item active">
+                        <img class="d-block" src="./assets/img/slide1.jpg" alt="">
+                    </div>
+                    <div data-bs-interval="5000" class="carousel-item">
+                        <img class="d-block" src="./assets/img/slide2.jpg" alt="">
+                    </div>
+                    <div data-bs-interval="5000" class="carousel-item">
+                        <img class="d-block" src="./assets/img/slide3.jpg" alt="">
+                    </div>
+                    <div data-bs-interval="5000" class="carousel-item">
+                        <img class="d-block" src="./assets/img/slide4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#initial-carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#initial-carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#initial-carousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#initial-carousel" data-bs-slide-to="3"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row dark-gradient">
+            <div class="col-12 w-100"></div>
+        </div>
+        <div class="container">
+            <nav class="nav nav-tabs" id="nav-tabs">
+                <button type="button" data-bs-toggle="tab" data-bs-target="#produtos-destaque" class="nav-link active">Em destaque</button>
+                <button type="button" data-bs-toggle="tab" data-bs-target="#tintos" class="nav-link">Tintos</button>
+                <button type="button" data-bs-toggle="tab" data-bs-target="#brancos" id="tab-brancos" class="nav-link">Brancos</button>
+                <button type="button" data-bs-toggle="tab" data-bs-target="#roses" class="nav-link">Rosés</button>
+                <button type="button" data-bs-toggle="tab" data-bs-target="#espumantes" class="nav-link">Espumantes</button>
+            </nav>
+            <section id="produtos">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="produtos-destaque">
+                        <div class="row titulo-aba">
+                            <div class="col-12 d-flex justify-content-center">
+                                <h1>Produtos em destaque</h1>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-start">
+                            <div class="col-lg-4 col-sm-10 col-md-6">
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="./assets/img/product1.jpg" alt="">
+                                        <h3 class="card-title">Nome do produto</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Ligeira descrição do produto: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <strong class="preco-produto">R$ 000,00</strong>
+                                        <div class="card-link">
+                                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-10 col-md-6">
+                                <div class="card text-center border-none">
+                                    <img class="card-img-top" src="./assets/img/product2.jpg" alt="">
+                                        <h3 class="card-title">Nome do produto</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Ligeira descrição do produto: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <strong class="preco-produto">R$ 000,00</strong>
+                                        <div class="card-link">
+                                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-10 col-md-6">
+                                <div class="card text-center border-none">
+                                    <img class="card-img-top" src="./assets/img/product3.jpg" alt="">
+                                        <h3 class="card-title">Nome do produto</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Ligeira descrição do produto: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <strong class="preco-produto">R$ 000,00</strong>
+                                        <div class="card-link">
+                                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tintos">
+                        <div class="row titulo-aba">
+                            <div class="col-12 d-flex justify-content-center">
+                                <h1>Vinhos tintos</h1>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-around">
+                            <div class="col-lg-4 col-sm-10 col-md-6">
+                                <div class="card text-center border-none">
+                                    <img class="card-img-top" src="./assets/img/product1.jpg" alt="">
+                                        <h3 class="card-title">Nome do produto</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Ligeira descrição do produto: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <strong class="preco-produto">R$ 000,00</strong>
+                                        <div class="card-link">
+                                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-10 col-md-6">
+                                <div class="card text-center border-none">
+                                    <img class="card-img-top" src="./assets/img/product2.jpg" alt="">
+                                        <h3 class="card-title">Nome do produto</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Ligeira descrição do produto: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <strong class="preco-produto">R$ 000,00</strong>
+                                        <div class="card-link">
+                                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-10 col-md-6">
+                                <div class="card text-center border-none">
+                                    <img class="card-img-top" src="./assets/img/product3.jpg" alt="">
+                                        <h3 class="card-title">Nome do produto</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Ligeira descrição do produto: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <strong class="preco-produto">R$ 000,00</strong>
+                                        <div class="card-link">
+                                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="brancos">
+                        <div class="row titulo-aba">
+                            <div class="col-12 d-flex justify-content-center">
+                                <h1>Vinhos brancos</h1>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-around">
+                            <div class="col-lg-4 col-sm-10 col-md-6">
+                                <div class="card text-center border-none">
+                                    <img class="card-img-top" src="./assets/img/product1.jpg" alt="">
+                                        <h3 class="card-title">Nome do produto</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Ligeira descrição do produto: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <strong class="preco-produto">R$ 000,00</strong>
+                                        <div class="card-link">
+                                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-10 col-md-6">
+                                <div class="card text-center border-none">
+                                    <img class="card-img-top" src="./assets/img/product2.jpg" alt="">
+                                        <h3 class="card-title">Nome do produto</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Ligeira descrição do produto: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <strong class="preco-produto">R$ 000,00</strong>
+                                        <div class="card-link">
+                                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-10 col-md-6">
+                                <div class="card text-center border-none">
+                                    <img class="card-img-top" src="./assets/img/product3.jpg" alt="">
+                                        <h3 class="card-title">Nome do produto</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Ligeira descrição do produto: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <strong class="preco-produto">R$ 000,00</strong>
+                                        <div class="card-link">
+                                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="roses">
+                        <div class="row titulo-aba">
+                            <div class="col-12 d-flex justify-content-center">
+                                <h1>Vinhos rosés</h1>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-around">
+                            <div class="col-lg-4 col-sm-10 col-md-6">
+                                <div class="card text-center border-none">
+                                    <img class="card-img-top" src="./assets/img/product1.jpg" alt="">
+                                        <h3 class="card-title">Nome do produto</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Ligeira descrição do produto: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <strong class="preco-produto">R$ 000,00</strong>
+                                        <div class="card-link">
+                                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-10 col-md-6">
+                                <div class="card text-center border-none">
+                                    <img class="card-img-top" src="./assets/img/product2.jpg" alt="">
+                                        <h3 class="card-title">Nome do produto</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Ligeira descrição do produto: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <strong class="preco-produto">R$ 000,00</strong>
+                                        <div class="card-link">
+                                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-10 col-md-6">
+                                <div class="card text-center border-none">
+                                    <img class="card-img-top" src="./assets/img/product3.jpg" alt="">
+                                        <h3 class="card-title">Nome do produto</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Ligeira descrição do produto: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <strong class="preco-produto">R$ 000,00</strong>
+                                        <div class="card-link">
+                                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="espumantes">
+                        <div class="row titulo-aba">
+                            <div class="col-12 d-flex justify-content-center">
+                                <h1>Espumantes</h1>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-around">
+                            <div class="col-lg-4 col-sm-10 col-md-6">
+                                <div class="card text-center border-none">
+                                    <img class="card-img-top" src="./assets/img/product1.jpg" alt="">
+                                        <h3 class="card-title">Nome do produto</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Ligeira descrição do produto: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <strong class="preco-produto">R$ 000,00</strong>
+                                        <div class="card-link">
+                                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-10 col-md-6">
+                                <div class="card text-center border-none">
+                                    <img class="card-img-top" src="./assets/img/product2.jpg" alt="">
+                                        <h3 class="card-title">Nome do produto</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Ligeira descrição do produto: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <strong class="preco-produto">R$ 000,00</strong>
+                                        <div class="card-link">
+                                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-10 col-md-6">
+                                <div class="card text-center border-none">
+                                    <img class="card-img-top" src="./assets/img/product3.jpg" alt="">
+                                        <h3 class="card-title">Nome do produto</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">Ligeira descrição do produto: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        <strong class="preco-produto">R$ 000,00</strong>
+                                        <div class="card-link">
+                                            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="row rodape dark-gradient-rodape">
+            <div class="col-12">
+                <p>&copy; Seu Site - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>

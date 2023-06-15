@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Wix+Madefor+Display&display=swap');
+
+body {
+    background-color: #801815;
+    overflow-x: hidden;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.navbar-nav .nav-link.active {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    background-color: rgb(144,20,42);
+}
+
+.section-carousel {
+    background-image: url(./img/background.png);
+    background-size: contain;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+.carousel-inner img {
+    width: 936px;
+    height: 576px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin: 40px auto;
+}
+
+.nav-tabs {
+    margin-top: 12px;
+}
+
+.nav-tabs .nav-link.active {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    background-color: #801815;
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: #0D0D0D;
+    text-align: center;
+    margin-left: 2px;  
+    border-bottom: 1px solid #fff;
+}
+
+section {
+    background-color: #801815;
+}
+
+.titulo-aba {
+    padding: 20px;
+    padding-top: 72px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.card {
+    border: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 80px;
+}
+
+.card-img-top {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    color: #90142a;
+    font-weight: bold;
+}
+
+.card-body {
+    color: #90142a;
+    background-color: #fff;
+    font-family: 'Wix Madefor Display', sans-serif;
+    border-radius: 10px;
+}
+
+.preco-produto {
+    font-size: 1.3rem;
+    font-family: 'Playfair Display', serif;
+    color: #C60422;
+    font-weight: bold;
+}
+
+.card-text {
+    margin-bottom: 40px;
+}
+
+.card-link .btn {
+    margin: 40px auto 25px;
+    background-color: #90142a;
+    border: none;
+    padding: 15px;
+    width: 100%;
+}
+
+.dark-gradient {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0), rgba(0, 0, 0), rgba(0, 0, 0, .75), rgba(0, 0, 0, .5), rgba(0, 0, 0, .25), rgba(0, 0, 0, 0));
+    height: 150px;
+    padding: 0;
+    margin-top: -2px;
+}
+
+.dark-gradient-rodape {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .25), rgba(0, 0, 0, .5), rgba(0, 0, 0, .75), rgba(0, 0, 0), rgba(0, 0, 0));
+}
+
+.rodape p {
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.rodape {
+    height: 150px;
+    align-items: end;
+    margin-top: 80px;
+}
+
+.dropdown {
+    display: none;
+}
+
+@media screen and (max-width: 670px) {
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .row.dark-gradient {
+        margin-right: 0;
+    }
+
+    .row.dark-gradient-rodape {
+        margin-right: 0;
+    }
+
+    .rodape p {
+        font-weight: 500;
+        font-size: .85rem;
+    }
+
+    .nav-tabs {
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid #fff;
+    }
+
+    .nav-tabs .nav-link {
+        font-size: .85rem;
+        margin-top: 12px;
+        margin-left: 2px;  
+        border-bottom: 1px solid #fff;
+    }
+
+    .nav-tabs .nav-link.active {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .dropdown {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .rodape p {
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+}
